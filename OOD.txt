@@ -5,7 +5,7 @@ See the syllabus for information on grading.  Turning in lab assignments is requ
 
 You may write these solutions in either Java or C++...your choice.
 
-Lab 2   Due: 5:00 pm, Friday, April 24, 2015
+Lab 2   Due: 5:00 pm, Monday, April 18, 2016
 
 Problem 1 (Composite, Strategy & Iterator Patterns):  
 
@@ -44,9 +44,9 @@ where:
             y is the yield per year, in decimal form, compounded at every coupon period
             c the coupon paid per year as a percentage of the principal
 
-For example, let us assume bond Î¼ to be a $100 2-year bond compounded semi-annually with a 5% yield with a coupon frequency of 2 (payments/year), and a coupon of 18% per year.  In this scenario, y = .05, k = 2, c = 18, and m would equal 4 (k * years).  Using the simplified formula above, the Macaulay Duration for bond Î¼ would be 1.7917624.  
+For example, let us assume bond ¦Ì to be a $100 2-year bond compounded semi-annually with a 5% yield with a coupon frequency of 2 (payments/year), and a coupon of 18% per year.  In this scenario, y = .05, k = 2, c = 18, and m would equal 4 (k * years).  Using the simplified formula above, the Macaulay Duration for bond ¦Ì would be 1.7917624.  
 
-As another example, let us assume bond Ï† is a $100 5-year bond compounded semi-annually with a 4% yield with a coupon frequency of 2 (payments/year), and a coupon of 20% per year.  In this scenario, y = .04, k = 2, c = 20, and m would equal 10 (k * years).  Using the simplified formula above, the Macaulay Duration for this bond Ï† would be 3.7813337. 
+As another example, let us assume bond ¦Õ is a $100 5-year bond compounded semi-annually with a 4% yield with a coupon frequency of 2 (payments/year), and a coupon of 20% per year.  In this scenario, y = .04, k = 2, c = 20, and m would equal 10 (k * years).  Using the simplified formula above, the Macaulay Duration for this bond ¦Õ would be 3.7813337. 
 
 In short, Macaulay Duration is the weighted average time until all cash flows are received, measured in years.  Another measure of duration that is often used is known as Modified Duration.  Modified Duration is the measure of the percentage change in price for a given change in yield.  For smaller movements in yield, the numeric results of Macualay and Modified Duration are similar; however, Modified Duration, instead of being a measure of time, is a measure of value, specifically, the rate of change of price sensitivity with respect to the percentage rate of change of price with respect to yield.
 
@@ -82,7 +82,7 @@ F is the face value of the bond
 r is the current prevailing interest rate (you will assume r = 2.5% for all bonds in all portfolios, and may hardcode it as such)
 t is the time periods occuring over the term of the bond (e.g., a two-year semi-annual bond will have four time periods, etc.)
 
-In short, the bond's current market value is equal to the present value of the face value plus the present value of interest payments.  For example, let us assume bond Îº to be a $100,000 10 year bond compounded annually (a coupon frequency of 1 payment/year), and a coupon of 8% per year.  The prevailing market interest rate we will assume is 2.5%.   In this scenario, F = 100,000, C = .08, r is .025, and t is 10 (years).  Using the formula above, the present value of bond Îº would be $148,136.  As another example, assume bond Î³ to be a $10,000 5 year bond compounded semi-annually (a coupon frequency of 2 payment/year), and a coupon of 8% per year.  The prevailing market interest rate we will assume is 2.5%.   In this scenario, F = 10,000, C = .04 (=8% / 2 periods/year), r is .025, and t is 10 (=5 years * 2 periods/year).  The present value of bond Î³ would be $11,313.
+In short, the bond's current market value is equal to the present value of the face value plus the present value of interest payments.  For example, let us assume bond ¦Ê to be a $100,000 10 year bond compounded annually (a coupon frequency of 1 payment/year), and a coupon of 8% per year.  The prevailing market interest rate we will assume is 2.5%.   In this scenario, F = 100,000, C = .08, r is .025, and t is 10 (years).  Using the formula above, the present value of bond ¦Ê would be $148,136.  As another example, assume bond ¦Ã to be a $10,000 5 year bond compounded semi-annually (a coupon frequency of 2 payment/year), and a coupon of 8% per year.  The prevailing market interest rate we will assume is 2.5%.   In this scenario, F = 10,000, C = .04 (=8% / 2 periods/year), r is .025, and t is 10 (=5 years * 2 periods/year).  The present value of bond ¦Ã would be $11,313.
 
 You are to deliver in code a single account that contains two portfolios each of which contains three bond instruments.  The account is also to contain three individual bonds that are not attached to a given portfolio.  You should implement an Account class that uses composition to hold a root Portfolio instance representing all top level items in the account, and note that this means your Portfolio class should support arbitrary nesting. You should write an Iterator for your traversal of the Composite. It is not necessary to write a container class for your iterator, and limiting your iterator to working with something like Java built-in arrays is acceptable.
 
